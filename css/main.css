@@ -1,0 +1,601 @@
+/* --------------------- Start Global Rules ------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.clr {
+    clear: both;
+}
+ul li  {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin: 0px auto;
+    padding-block: 80px;
+}
+.title h2{
+    text-align: center;
+    font-size: 40px;
+}
+.title .lines {
+    width: 20%;
+    margin: 15px auto 40px;
+}
+.title .first-line,
+.title .third-line{
+    width: 25%;
+    height: 1px;
+    background-color: #DD2A4F;
+    margin: 4px auto;
+}
+.title .second-line {
+    width: 50%;
+    height: 1px;
+    background-color: #DD2A4F;
+    text-align: center;
+    margin: 4px auto;
+}
+/* --------------------- End Global Rules ------------------*/
+/* --------------------- Start Home------------------*/
+#home {
+    background-image: url("../images/slider-02.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+#home .layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#home .nav {
+    padding: 10px 30px;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+#home .nav .logo {
+    float: left;
+}
+#home .nav .logo a {
+    color: #DD2A4F;
+    font-size: 24px;
+    letter-spacing: .5px;
+}
+#home .nav button {
+    display: none;
+}
+#home .nav .menu {
+    float: right;
+}
+#home .nav .menu li {
+    display: inline-block;
+    padding: 5px;
+}
+#home .nav .menu li a {
+    color:#fff;
+    letter-spacing: .5px;
+}
+#home .nav .menu .active {
+    color: #DD2A4F;
+}
+#home .caption {
+    color: #fff;
+    text-align: center;
+    letter-spacing: .5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#home .caption h4{
+    font-size: 24px;
+    font-family: 600;
+}
+#home .caption h1 {
+    font-size: 70px;
+    font-family: 700;
+    padding-block: 20px;
+    letter-spacing: 2px;
+    color: #DD2A4F;
+}
+#home .caption p {
+    font-size: 26px;
+}
+/* :target {
+    color: #DD2A4F;
+} */
+
+/* --------------------- End Home------------------*/
+/* --------------------- Start About------------------*/
+#about .about-img {
+    width: 30%;
+    float: left;
+    border: 10px solid #555555;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    
+}
+#about .about-img .img {
+    width: 100%;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#about .about-img .img img {
+    width: 100%;
+}
+#about .about-img .img .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.57);
+    transition: top 1s;
+    
+}
+#about .about-img:hover .img .layer {
+    top: 0;
+}
+#about .about-img .img .layer .social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#about .about-img .img .layer li {
+    display: inline-block;
+}
+#about .about-img .img .layer li {
+    padding: 5px;
+}
+#about .about-img .img .layer li a {
+    color: #fff;
+} 
+#about .about-info {
+    width: 50%;
+    float: right;
+}
+#about .about-info h3 span {
+    border-left: 5px solid #DD2A4F;
+    padding-right: 7px;
+}
+#about .about-info h3 {
+    font-size: 34px;
+}
+#about .about-info p {
+    line-height: 1.5;
+    color: #333;
+    padding-block: 20px;
+    border-bottom: 1px dashed #999;
+}
+#about .about-info table td {
+    padding-top: 20px;
+    padding-right: 50px;
+}
+#about .about-info table td span {
+    color: #333;
+}
+#about .about-info button {
+    padding: 10px 25px;
+    background-color: #DD2A4F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 20px; 
+    transition: background-color .5s;
+}
+#about .about-info button:hover {
+    background-color: #EC2403;
+}
+#about .about-info button i {
+    padding-left: 5px;
+}
+/* --------------------- End About------------------*/
+/* --------------------- Start Services------------------*/
+#services {
+    background-color: #F1F1F1;
+}
+#services .services-box .ser {
+    width: 25%;
+    float: left;
+    padding: 40px 15px;
+    text-align: center;
+    transition: background-color 1s;
+    border-radius: 4px;
+}
+#services .services-box .ser:hover {
+    background-color: #fff;
+}
+#services .services-box .ser i {
+    color: #DD2A4F;
+    transition: transform .5s;
+    font-size: 24px;
+}
+#services .services-box .ser:hover i {
+    transform: scale(1.7);
+}
+#services .services-box .ser h3 {
+    padding-block: 20px;
+}
+/* --------------------- End Services------------------*/
+/* --------------------- Start Portfolio------------------*/
+#portfolio .menu {
+    text-align: center;
+}
+#portfolio .menu li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+#portfolio .menu .active {
+    color: #DD2A4F;
+}
+#portfolio .menu a {
+    color: black;
+}
+#portfolio .portfolio-box .box {
+    width: 33.33%;
+    float: left;
+    transition: background-color 1s;
+    padding: 20px;
+}
+#portfolio .portfolio-box .box-cont {
+    position: relative;
+}
+#portfolio .box img {
+    width: 100%;
+}
+#portfolio .portfolio-box .box .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.619);
+    opacity: 0;
+    transition: opacity 1s;
+}
+#portfolio .portfolio-box .box:hover .layer {
+    opacity: 1;
+}
+#portfolio .portfolio-box .box .layer i {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    color: #DD2A4F;
+}
+
+
+/* --------------------- End Portfolio------------------*/
+/* --------------------- Start Footer------------------*/
+#team {
+    background-color: #F1F1F1;
+}
+#team .team-box .box {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+#team .team-box .box i {
+    color: #DD2A4F;
+    font-size: 26px;
+}
+#team .team-box .box h4 {
+    margin-block: 15px;
+    font-size: 26px;
+    font-weight: 800;
+}
+#team .team-box .box p {
+    color: #555;
+}
+
+/* --------------------- End Team------------------*/
+/* --------------------- Start Testimonial------------------*/
+#testimonial .box {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #F1F1F1;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+#testimonial .box .curve {
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    left: 0;
+    top: 0;
+    background-color: #FF305B;
+    transform: translate(-30%,-40%) rotate(47deg);
+}
+#testimonial .box .img {
+    width: 15%;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    
+}
+#testimonial .box .img img {
+    width: 100%;
+}
+#testimonial .box .text {
+    width: 80%;
+    float: right;
+}
+#testimonial .box .text h3 {
+    padding-block: 10px;
+    font-size: 25px;
+    /* font-family: 500; */
+}
+#testimonial .box .text h4 {
+    color:#555;
+    padding-bottom: 15px;
+}
+#testimonial .box .text h4 i {
+    font-size: 14px;
+    padding-right: 3px;
+    font-family: 400;
+}
+#testimonial .box .text p {
+    padding-bottom: 15px;
+    line-height: 1.5;
+    color:#555;
+    font-style: italic;
+}
+#testimonial .box .text .fa-solid,
+#testimonial .box .text .fa-regular {
+    color: #f1c30d;
+}
+/* --------------------- End Testimonial------------------*/
+/* --------------------- Start Blog------------------*/
+#blog {
+    background-color: #F1F1F1;
+}   
+#blog .box {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+#blog .box-cont {
+    background-color: #f1c30d;
+    background-color: #fff;
+}
+#blog .box-cont .img {
+
+}
+#blog .box-cont .img img {
+    width: 100%;
+    height: 200px;
+}
+#blog .box-cont .img iframe {
+ width: 100%;
+ height: 200px;
+}
+/* fixed height for img and iframe or aspect-ratio : 16 /9 for iframe */
+#blog .box-cont .text {
+    padding: 20px;
+}
+#blog .box-cont .text p {
+    padding-block: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+#blog .box-cont .text h3 {
+    letter-spacing: .8px;
+    color: #333;
+}
+#blog .box-cont .text a {
+    color: #555;
+    transition: color .5s;
+}
+#blog .box-cont .text a:hover {
+    color: #FF305B;
+}
+/* --------------------- End Blog------------------*/
+/* --------------------- Start Contact------------------*/
+#contact form {
+    width: 70%;
+    margin: 5px auto;
+}
+#contact form .row input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+#contact form .row .name-inp,
+#contact form .row .email-inp {
+    width: 45%;
+}
+#contact form .row .email-inp {
+    float: left; 
+}
+#contact form .row .email-inp {
+    float: right;
+}
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#contact form .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF305B;
+    color: #fff;
+    border-radius: 5px;
+}
+/* --------------------- End Contact------------------*/
+/* --------------------- Start Footer------------------*/
+#footer {
+    background-color: #333;
+    color: #fff;
+}
+#footer .info {
+    text-align: center;
+}
+#footer .social li {
+    display: inline-block;
+    padding-left: 20px;
+}
+#footer .social li a {
+    color: #fff;
+}
+#footer .social li a i {
+    font-size: 15px;
+}
+#footer p {
+    padding-top: 20px;
+}
+#footer p span {
+    color: #DD2A4F;
+}
+/* --------------------- End Footer------------------*/
+/* --------------------- Start Media------------------*/
+@media screen and (max-width: 992px) {
+    #home .nav {
+        padding-inline: 10px;
+    }
+    #home .caption h4{
+    font-size: 18px;
+    font-family: 500;
+    }
+    #home .caption h1 {
+        font-size: 45px;
+        font-family: 500;
+    }
+    #home .caption p {
+        font-size: 16px;
+    }
+    #about .about-info {
+        width: 60%;
+    }
+    #about .about-img {
+        width: 40%;
+        left: 0;
+        border: none;
+    } 
+    #about .about-info{
+        width: 55%;
+    }
+    #about .about-img .img {
+        left: 0;
+        top: 0;
+    }
+    #about .about-info h3 {
+        font-size: 24px;
+    }
+    #about .about-info p {
+        padding-block: 5px;
+    }
+    #about .about-info table td {
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+    #about .about-info button {
+        margin-top: 5px; 
+    }
+    #services .services-box .ser {
+    width: 33.33%;
+    }
+    #portfolio .portfolio-box .box {
+        width: 50%;
+    }
+    #team .team-box .box {
+        width: 33.33%;
+        margin-bottom: 40px;
+    }
+    #blog .box {
+        width: 50%;
+    }
+    #contact form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #home .nav .menu {
+        display: none;
+    }
+    #home .caption h1 {
+        font-size: 30px;
+        font-family: 600;
+    }
+    #about .about-img {
+    width: 100%;
+} 
+    #about .about-info{
+        width: 100%;
+        margin-top: 30px;
+        text-align: start;
+    }
+    #about .about-info h3 {
+        font-size: 30px;
+    }
+    #about .about-info p {
+        padding-block: 10px;
+    }
+    #about .about-info table td {
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    #about .about-info button {
+        margin-top: 10px; 
+    
+    }
+    #services .services-box .ser {
+    width: 50%;
+    }
+    #team .team-box .box {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    #about .about-info table td  {
+        display: block;
+    }  
+    #services .services-box .ser {
+        width: 100%;
+    }
+    #portfolio .portfolio-box .box {
+        width: 100%;
+    }
+    #team .team-box .box {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #testimonial .box {
+        width: 100%;
+    }
+    #testimonial .box .text {
+        width: 100%;
+    }
+    #blog .box {
+        width: 100%;
+    }
+}
+/* --------------------- End Media------------------*/
